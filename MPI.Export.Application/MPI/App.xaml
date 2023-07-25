@@ -1,0 +1,21 @@
+﻿<Application x:Class="MPI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MPI"
+             xmlns:view="clr-namespace:MPI.Views"
+             xmlns:viewModels="clr-namespace:MPI.ViewModels">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <!--#region UserControlers-->
+            <DataTemplate DataType="{x:Type viewModels:HomeViewModel}">
+                <view:HomeView />
+            </DataTemplate>
+            <!--#endregion-->
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
